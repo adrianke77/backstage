@@ -51,7 +51,7 @@ export interface TechDocsApi {
     // (undocumented)
     getApiOrigin(): Promise<string>;
     // (undocumented)
-    getEntityMetadata(entityId: EntityName): Promise<TechDocsEntityMetadata>;
+    getEntityMetadata(entityId: EntityName): Promise<TechDocsEntityMetadata | undefined>;
     // (undocumented)
     getTechDocsMetadata(entityId: EntityName): Promise<TechDocsMetadata>;
 }
@@ -72,7 +72,7 @@ export class TechDocsClient implements TechDocsApi {
     discoveryApi: DiscoveryApi;
     // (undocumented)
     getApiOrigin(): Promise<string>;
-    getEntityMetadata(entityId: EntityName): Promise<TechDocsEntityMetadata>;
+    getEntityMetadata(entityId: EntityName): Promise<TechDocsEntityMetadata | undefined>;
     getTechDocsMetadata(entityId: EntityName): Promise<TechDocsMetadata>;
     // (undocumented)
     identityApi: IdentityApi;

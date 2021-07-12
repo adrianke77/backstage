@@ -14,7 +14,7 @@ export const EntitySonarQubeCard: ({ variant, duplicationRatings, }: {
     variant?: InfoCardVariants| undefined;
     duplicationRatings?: {
         greaterThan: number;
-        rating: "1.0" | "2.0" | "3.0" | "4.0" | "5.0";
+        rating: "3.0" | "1.0" | "2.0" | "4.0" | "5.0";
     }[] | undefined;
 }) => JSX.Element;
 
